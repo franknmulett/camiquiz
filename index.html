@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <img id="question-image" src="" alt="Question Image" />
+        <form id="options-form">
+            <div>
+                <input type="radio" id="option1" name="answer" value="0">
+                <label for="option1"><img src="" alt="Option 1" class="option-image"></label>
+            </div>
+            <div>
+                <input type="radio" id="option2" name="answer" value="1">
+                <label for="option2"><img src="" alt="Option 2" class="option-image"></label>
+            </div>
+            <div>
+                <input type="radio" id="option3" name="answer" value="2">
+                <label for="option3"><img src="" alt="Option 3" class="option-image"></label>
+            </div>
+            <div>
+                <input type="radio" id="option4" name="answer" value="3">
+                <label for="option4"><img src="" alt="Option 4" class="option-image"></label>
+            </div>
+        </form>
+        <button id="verify-btn">Verify</button>
+        <button id="next-btn" style="display: none;">Next</button>
+        <p id="feedback"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

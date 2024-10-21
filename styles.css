@@ -1,0 +1,81 @@
+#quiz-container {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-image {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    margin: 10px;
+}
+
+/* Make the main image double the size of the option images */
+.option-image {
+    width: 400px;
+    height: 100px;
+    object-fit: fill;
+    margin: 5px;
+}
+
+/* Align the radio button in the center of the option container */
+#options-form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Space between the options */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Center the buttons */
+#verify-btn, #next-btn {
+    display: block;
+    margin: 15px auto; /* Center the buttons */
+    width: 150px;      /* Increase button width */
+    height: 50px;      /* Increase button height */
+    font-size: 1.2em;  /* Increase font size */
+    padding: 10px;     /* Add padding for extra spacing */
+}
+
+/* Make it responsive when resized by the browser */
+@media screen and (max-width: 500px) {
+    .main-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .option-image {
+        width: 150px;
+        height: 75px;
+    }
+}
+
+/* Style for the feedback message */
+#feedback {
+    font-size: 1.5em; /* Make the text larger */
+    margin-top: 20px;
+}
+
+/* Style for the correct feedback */
+.correct {
+    color: green;     /* Green color for correct answers */
+    font-size: 2em;   /* Make it bigger */
+    font-weight: bold;
+}
+
+/* Style for the incorrect feedback */
+.incorrect {
+    color: red;       /* Red color for incorrect answers */
+    font-size: 1.8em; /* Make it bigger */
+    font-weight: bold;
+}
+
